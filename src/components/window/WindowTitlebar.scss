@@ -1,0 +1,53 @@
+$titlebar-height:2.3rem;
+#window-titlebar {
+    z-index: 2147483647;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: $titlebar-height;
+    background: hsl(210, 4%, 11%);
+    color: rgba(255, 255, 255, 0.9);
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    &>* {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+    }
+    & i {
+        margin: 0;
+    }
+    #window-titlebar-actions {
+        -webkit-app-region: no-drag;
+        &>* {
+            width: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background: hsl(0, 0%, 25%);
+                color: rgba(255, 255, 255, 1);     
+            }
+        }
+        &>#close-window {
+            font-size: 1.3em;
+            &:hover {
+                background: hsl(0, 72%, 57%);
+                color: hsl(0, 0%, 100%)
+            }
+        }
+    }
+    #window-titlebar-title {
+        &>* {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 .25rem;
+            font-size: 1.1em;
+        }
+        & i{
+            font-size: 1.3em;
+        }
+    }
+}

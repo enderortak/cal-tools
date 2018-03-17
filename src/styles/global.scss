@@ -1,0 +1,10 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css);
+@import "mixins/flexbox.scss";
+body{
+    margin: 0;
+    @include flexboxContainer(column, nowrap, flex-start, stretch);
+}
+#root{
+    @include flexboxContainer(column, nowrap, flex-start, stretch);
+    @include flex(1);
+}

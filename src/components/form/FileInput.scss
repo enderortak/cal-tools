@@ -1,0 +1,17 @@
+#addFileButton{
+    position: relative;
+    overflow: hidden;
+}
+#addFileInput{
+    opacity: 0;
+    position: absolute;
+    top: -22px;
+    left: 0;
+    width: 100%;
+    height: calc(22px + 100%);
+    cursor: pointer;
+}
+
+#fileInputList{
+    overflow: auto;
+}

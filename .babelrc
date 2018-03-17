@@ -1,0 +1,11 @@
+
+{
+    "plugins": ["transform-react-jsx", "transform-class-properties", "react-hot-loader/babel"],
+    "presets": ["stage-0", "react",  ["env", {
+                                        "targets": {
+                                            "browsers": ["last 2 Chrome versions"]
+                                        },
+                                        "modules": false
+                                    }]
+                ]
+}

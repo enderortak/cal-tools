@@ -1,0 +1,9 @@
+@import "../../styles/mixins/flexbox.scss";
+#window-content{
+    @include flex(1);
+    @include flexboxContainer(row, nowrap, flex-start, stretch);
+    position: relative;
+    border-left: 2px solid hsl(210, 2%, 20%);
+    border-right: 2px solid hsl(210, 2%, 20%);
+    border-bottom: 2px solid hsl(210, 2%, 20%);
+}
